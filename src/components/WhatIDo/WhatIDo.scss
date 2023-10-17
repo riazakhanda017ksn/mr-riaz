@@ -1,0 +1,62 @@
+.what-i-do {
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+.what-i-do h1 {
+    font-size: 6vw;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.video-section {
+    color: #fafafa;
+    max-width: 100%;
+    position: relative;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.video-section video {
+    height: 70vh;
+    filter: grayscale(100%);
+}
+
+.overly {
+    background: #00000059;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.overly h3{
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 3px;
+    padding-top: 8px;
+}
+
+.overly p{
+    width: 78%;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+.overly img{
+    width: 50px;
+}
+
+.overly a {
+    color: #dbdbdb;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}

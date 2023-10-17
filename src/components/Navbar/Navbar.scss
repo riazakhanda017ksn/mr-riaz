@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+.Navbar {
+    background: black;
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    // transform: translateY(0%);
+    transition: all 2s ease;
+    z-index: 999;
+}
+.name  {
+
+  font-size: 45px;
+  font-family: 'Fuggles', cursive;
+}
+.menu h1 {
+  padding-left: 30px;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+}
+span.one {
+    display: inline-block;
+    width: 46px;
+    background: black;
+    padding: 1px;
+    margin-right: 40px;
+}
+span.two {
+    display: inline-block;
+    width: 30px;
+    background: black;
+    padding: 1px;
+    margin-right: 40px;
+}
+.hamberger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 3s ease;
+
+}
+span.one {
+    display: inline-block;
+    width: 40px;
+    background: black;
+    padding: 1px;
+    margin-right: 40px;
+    margin-bottom: 9px;
+}
+
+.menu {
+    padding: 0 30px;
+    letter-spacing: 7px;
+    font-weight: 400;
+}
+
+.menu h1 {
+    margin: 0;
+    padding: 10px 0;
+    transition: all 3s ease;
+
+}
+.menu {
+   
+  background: #EEEEEE  !important;
+}
+.blog {
+    padding: 100px;
+    padding-top: 0 !important;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    padding: 7px;
+    letter-spacing: 7px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.parents {
+    color: #FFF;
+    padding: 12px 21px;
+    letter-spacing: 15px;
+}
+
+.link-items {
+    font-family: 'Montserrat';
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.link-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-items ul li a{
+    display: block;
+    padding: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #FFF;
+}
+.hamberger{
+  position: relative;
+  top: 20px;
+}
+.hamberger span{
+  height: 2px !important;
+  width: 35px !important;
+  display: inline-block;
+  background: black;
+  margin-bottom: 10px;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: none;
+  padding: 12px;
+}
+
+.navbar {
+  background: black;
+  position: fixed;
+  width: 0px;
+  height: 100vh !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  opacity: 0;
+}
+
+.flex-item p {
+  margin-right: 33px;
+  font-size: 22px;
+  margin-top: 12px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
