@@ -18,3 +18,270 @@ body{
 html{
   scroll-behavior: smooth;
 }
+
+.block {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .hero-section.container h1 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+.show-more-project.text-center {
+  margin: 30px 0;
+}
+.blog-content h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.article h2 {
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  bottom: 8px;
+  text-align: center;
+}
+.blogs-single-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 18px 0;
+  border-radius: 6px;
+  margin-bottom: 0;
+}
+.article-content-description h3 {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.footer {
+  text-align: center;
+}
+.footer-flex {
+  display: flex;
+  gap: 13px;
+  color: black;
+  justify-content: center;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  background: #EEEEEE;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  position: relative;
+  bottom: 50px;
+}
+.block {
+  display: block !important;
+}
+.none {
+  display: none;
+}
+.hero-section {
+  padding: 100px 18px;
+}
+
+.flex-item {
+  width: 100%;
+  text-align: center;
+}
+.flex-item p {
+  margin-right: 33px;
+  font-size: 22px;
+  margin-top: 12px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+}
+.flex-item {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+.img-and-img {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  padding: 0 14px;
+  justify-content: space-between;
+}
+
+.cv-download {
+  display: flex;
+  justify-content: center !important;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  margin-top: 74px !important;
+}
+
+.cv-download a::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -69px;
+  background: black;
+  height: 1px;
+  width: 178px;
+}
+.cv-download {
+  display: flex;
+  justify-content: end;
+  height: 100%;
+  align-items: end;
+  width: 100%;
+  margin-top: 58px;
+}
+
+.blogs-containers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  padding: 0 22px;
+  text-align: center;
+}
+.digital-about h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+.arrow-icon img {
+  height: 115px;
+  margin-bottom: 20px;
+}
+.img-and-img {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  padding: 0 14px;
+  justify-content: center;
+}
+.img-and-img img {
+  width: 50px !important;
+  bottom: 6px;
+  position: relative;
+  animation: App 8s ease-in infinite;
+}
+
+.about-content p {
+  width: 100%;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-div {
+  width: 100%;
+  position: relative;
+  top: 30px;
+  height: 100%;
+  text-align: center;
+}
+.what-i-do h1 {
+  font-size: 9vw;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.hamberger {
+  position: relative;
+  top: 0px;
+}
+.item {
+  margin: 16px !important;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: #EEEEEE;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid black;
+}
+.intro p {
+  font-size: 23px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 25px;
+  letter-spacing: 3px;
+}
+.details h4 {
+  padding: 2px 0;
+  width: 100%;
+  font-size: 15px !important;
+  font-weight: 500;
+  line-height: 21px !important;
+}
+.details p {
+  text-align: justify;
+  line-height: 26px;
+  font-size: 13px;
+  font-weight: 400;
+  overflow: auto;
+  height: 280px;
+}
+
+.details p {
+  text-align: justify;
+  line-height: 26px;
+  font-size: 13px;
+  font-weight: 400;
+  overflow: auto;
+  height: 285px;
+}
+.intro h1 {
+  text-align: center;
+  font-size: 42px;
+  width: 100%;
+}
+.intro h1 {
+  text-align: center;
+  font-size: 42px;
+  width: 100%;
+}
+.details h4 {
+  padding: 2px 0;
+  width: 100%;
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.details h4 {
+  padding: 2px 0;
+  width: 100%;
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.details h4 {
+  padding: 2px 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+}
+}

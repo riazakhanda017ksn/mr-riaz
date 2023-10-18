@@ -79,11 +79,11 @@ const GSAPAnimation= () => {
         <h1
           data-aos="fade-down"
           data-aos-easing="linear"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
         >
           Hello There !
         </h1>
-        <p data-aos="fade-up" data-aos-duration="3000">
+        <p data-aos="fade-up" data-aos-duration="1200">
           Let's show my recent projects
         </p>
         <Link to="nextSection@" smooth={true} duration={700} onClick={scrollToNextSection}>

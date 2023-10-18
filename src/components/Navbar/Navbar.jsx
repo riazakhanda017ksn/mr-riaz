@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className="main-header">
     <div className="name">Developer Riaz</div>
     <div>
-      <div className="menu">
+      <div >
         <div className="hamberger" onClick={openY } >
          <span></span>
          <span></span>
