@@ -14,6 +14,14 @@
 
   font-size: 45px;
   font-family: 'Fuggles', cursive;
+ color: white;
+
+}
+.name {
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .menu h1 {
   padding-left: 30px;
@@ -127,7 +135,7 @@ span.one {
   height: 2px !important;
   width: 35px !important;
   display: inline-block;
-  background: black;
+  background: white;
   margin-bottom: 10px;
 }
 .main-header {
@@ -150,11 +158,6 @@ span.one {
   align-items: center;
 }
 
-.name {
-  height: 45px;
-  display: flex;
-  align-items: center;
-}
 
 .header {
   background: none;

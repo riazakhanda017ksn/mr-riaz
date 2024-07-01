@@ -82,6 +82,11 @@
     font-family: 'Fuggles';
 }
 
+.about-content p {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 30px;
+}
 .about-me a:hover{
     background: #000;
     color: white;
@@ -104,14 +109,6 @@
     font-weight: 700;
   }
 
-  .about-content p {
-    width: 90%;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 500;
-    letter-spacing: 0.1px;
-    margin-bottom: 20px;
-}
 
 .about-content img{
 	
@@ -128,16 +125,9 @@
     display: block;
     position: relative;
     left: -2px;
-}
-
-.arrow-icon span {
-    transform: rotate(-91deg);
-    display: block;
-    position: relative;
-    left: -2px;
     bottom: 17px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .arrow-icon img{
@@ -252,6 +242,9 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     transform: translate(0px, 0px);
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
 }
 .cv-download a:hover{
     transform: translate(10px, 0px);
@@ -261,10 +254,10 @@
 .cv-download a::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 33px;
     left: -69px;
     background: black;
-    height: 1.9px;
+    height: 2px;
     width: 178px;
 }
 .cv-download a::after {
@@ -273,6 +266,6 @@
     top: -10px;
     left: 2px;
     background: black;
-    height: 1px;
+    height: 2px;
     width: 178px;
 }

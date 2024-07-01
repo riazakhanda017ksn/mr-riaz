@@ -1,14 +1,8 @@
 import React, { useEffect } from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import { Link } from 'react-scroll';
 import About from './components/About/About';
-import WhatIDo from './components/WhatIDo/WhatIDo';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import GSAPAnimation from './components/GSAP_Animation/GSAP_Animation';
-import Blog from './components/Blogs/Blog';
-import Footer from './components/Footer/Footer';
+import Myself from './components/Me/Me';
 
 const App = () => {
   useEffect(() => {
@@ -28,13 +22,10 @@ const App = () => {
     <>
   
       <div >
-      <Navbar/>
-      <Hero/>
+      
+      <Myself/>
       <About/>
-      <WhatIDo/>  
-      <GSAPAnimation/>
-      <Blog/>
-      <Footer/>
+     
        </div>
   
     </>

@@ -68,12 +68,15 @@ const About = () => {
         <div className="container py-5 mb-5">
         <div className='digital-about'>
             <div className="img-and-img">
-            <h1>About Me</h1>
-            <img src={img} alt="" />
+            <h1>
+                <span data-aos="fade-up" data-aos-delay="400">About</span> <span data-aos="fade-up" data-aos-delay="400">Me</span></h1>
+            <img data-aos="fade-up" data-aos-delay="600" src={img} alt="" />
             </div>
-            <h1 className='py-3'>Fronted Developer</h1>
+            <h1 className='py-3'>
+                <span data-aos="fade-up" data-aos-delay="600">Fronted</span> <span data-aos="fade-up" data-aos-delay="800">Developer</span>
+                 </h1>
         </div>
-        <div className="row mt-3">
+        <div className="row mt-3" data-aos="fade-up" data-aos-delay="1000">
             <div className="col-lg-2" id="hero">
             <Link to="nextSection" smooth={true} duration={500} onClick={scrollToNextSection}>
                 <div className="arrow-icon text-center mt-5 pt-3 " style={{cursor:"pointer"}} >

@@ -1,11 +1,16 @@
 body{
-  font-family: 'Montserrat', sans-serif !important;
   overscroll-behavior: none;
   margin: 0;
   padding: 0;
-  background: #EEEEEE;
+  background: #ffffff;
 }
+p,small{
+  font-family: 'Montserrat', sans-serif !important;
 
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Cinzel", serif !important
+}
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -22,6 +27,8 @@ html{
 .block {
   display: none;
 }
+
+
 
 @media only screen and (max-width: 990px) {
   .hero-section.container h1 {
@@ -130,10 +137,10 @@ html{
 .cv-download a::before {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 33px;
   left: -69px;
   background: black;
-  height: 1px;
+  height: 2px;
   width: 178px;
 }
 .cv-download {
