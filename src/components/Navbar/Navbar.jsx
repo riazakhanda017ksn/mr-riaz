@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import logo___img from "../../assets/img/logo.png"
+import logo from "../../../src/assets/img/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="container">
     <div className="main-header">
     <div className="names">
-      <img src={logo___img} alt="" />
+      <img src={logo} alt="" />
     </div>
     <div>
       <div >
