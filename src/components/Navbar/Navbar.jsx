@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import { Squeeze as Hamburger } from 'hamburger-react'
-
+import logo from '../../assets/img/logo.png'
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -19,7 +18,9 @@ const Navbar = () => {
     <div className="header">
     <div className="container">
     <div className="main-header">
-    <div className="name">Developer Riaz</div>
+    <div className="names">
+      <img src={logo} alt="" />
+    </div>
     <div>
       <div >
         <div className="hamberger" onClick={openY } >

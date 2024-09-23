@@ -1,108 +1,41 @@
-// import React from 'react';
-// import riaz from '../../assets/img/a.jpg'
-// import files from '../../assets/files/Riaz_Resume.pdf'
-
-// import './About.scss'
-// const About = () => {
-//     const handleDownload = () => {
-//         const fileUrl = files;
-//         const anchor = document.createElement('a');
-//         anchor.href = fileUrl;
-//         anchor.download = 'riaz_resume.pdf';
-//         anchor.click();
-//         anchor.remove();
-//       };
-//     return (
-//         <div className='container my-5 pb-5' style={{overflow:"hidden"}}>
-//              <div className="row">
-//                 <div className="col-lg-6">
-//                     <div className="about-img text-center" data-aos="fade-right">
-//                     <img src={riaz} alt="" />
-//                     </div>
-//                 </div>
-//                 <div className="col-lg-6">
-//                     <div className="about-me" data-aos="fade-left">
-//                         <h1>About Me</h1>
-//                         <h2>Riaz Ahmed Akhanda</h2>
-//                         <h3>Fronted Developer & Web Designer</h3>
-//                         <p className='mt-4'>Hi there, I'm Riaz Ahmed. I work in the field of Web Development, and I am very passionate and dedicated to what I do.</p>
-//                         <p >With 2 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.I enjoy every step of the design process, from discussion and collaboration.</p>
-//                         <a className='mt-5 d-inline' onClick={handleDownload}>
-//                          Download CV
-//                         </a>
-//                     </div>
-//                 </div>
-//              </div>
-//         </div>
-//     );
-// };
-
-// export default About;
-
-import React from 'react';
-import img from '../../assets/img/23.png'
-import arrow from '../../assets/img/scrolldown.svg'
-import riaz from '../../assets/img/a.jpg'
-import files from '../../assets/files/Riaz_Resume.pdf'
+import React, { useState, useEffect } from "react";
 import './About.scss'
-import { Link } from 'react-scroll';
-
 const About = () => {
-        const handleDownload = () => {
-        const fileUrl = files;
-        const anchor = document.createElement('a');
-        anchor.href = fileUrl;
-        anchor.download = 'riaz_resume.pdf';
-        anchor.click();
-        anchor.remove();
-      };
+    const [opacity, setOpacity] = useState(0);
 
-      const scrollToNextSection = () => {
-        const nextSectionElement = document.getElementById('nextSection');
-        nextSectionElement.scrollIntoView({ behavior: 'smooth' });
+  const handleScroll = () => {
+    const aboutSection = document.getElementById("about-section");
+    const sectionTop = aboutSection.getBoundingClientRect().top;
+    const sectionHeight = aboutSection.getBoundingClientRect().height;
+    const windowHeight = window.innerHeight;
+
+    // Calculate how much of the section is within the viewport
+    if (sectionTop < windowHeight && sectionTop + sectionHeight > 0) {
+      // Calculate opacity based on scroll position
+      const opacityValue = Math.min(1, Math.max(0, 1 - sectionTop / windowHeight));
+      setOpacity(opacityValue);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
-
-        
-   
+  }, []);
     return (
-        <div className="container py-5 mb-5">
-        <div className='digital-about'>
-            <div className="img-and-img">
-            <h1>
-                <span data-aos="fade-up" data-aos-delay="400">About</span> <span data-aos="fade-up" data-aos-delay="400">Me</span></h1>
-            <img data-aos="fade-up" data-aos-delay="600" src={img} alt="" />
+        <div className='about_me' style={{
+            opacity: opacity,
+            transition: "opacity 0s ease-in-out",
+            height: "100vh", 
+          }}               id="about-section"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#181818" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,122.7C384,128,480,160,576,197.3C672,235,768,277,864,288C960,299,1056,277,1152,229.3C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+            <div className="black-height" style={{height:'100vh',background:"#181818" }}>
+
             </div>
-            <h1 className='py-3'>
-                <span data-aos="fade-up" data-aos-delay="600">Fronted</span> <span data-aos="fade-up" data-aos-delay="800">Developer</span>
-                 </h1>
-        </div>
-        <div className="row mt-3" data-aos="fade-up" data-aos-delay="1000">
-            <div className="col-lg-2" id="hero">
-            <Link to="nextSection" smooth={true} duration={500} onClick={scrollToNextSection}>
-                <div className="arrow-icon text-center mt-5 pt-3 " style={{cursor:"pointer"}} >
-                    <span>See More</span> <br />
-                    <img className='mt-2' src={arrow} alt="" />
-                </div>
-                </Link>
-            </div>
-            <div className="col-lg-8">
-                <div className="about-content">
-                  <p>Hi there, I'm Riaz Ahmed. I work in the field of Web Development, and I am very passionate and dedicated to what I do.With 2 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.I enjoy every step of the design process, from discussion and collaboration.</p>
-                  <div className="image-div">
-                  <img src={riaz} alt="" />
-                  <div className="overly-img">
-                
-                  </div>
-                  </div>
-                  <div className="cv-download">
-                <a onClick={handleDownload}>
-                    Download CV
-                    </a>
-                </div>
-                </div>
-            </div>
-           
-        </div>
         </div>
     );
 };

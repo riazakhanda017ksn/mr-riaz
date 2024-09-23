@@ -14,7 +14,6 @@
 
   font-size: 45px;
   font-family: 'Fuggles', cursive;
- color: white;
 
 }
 .name {
@@ -131,12 +130,14 @@ span.one {
   position: relative;
   top: 20px;
 }
-.hamberger span{
-  height: 2px !important;
-  width: 35px !important;
+.hamberger span {
+  height: 1.4px !important;
+  width: 51px !important;
   display: inline-block;
-  background: white;
   margin-bottom: 10px;
+  position: relative;
+  top: -14px;
+  background: black;
 }
 .main-header {
   display: flex;
@@ -182,4 +183,9 @@ span.one {
   margin-top: 12px;
   line-height: 36px;
   letter-spacing: 1px;
+}
+
+.hamberger {
+  position: relative;
+  top: 4px !important;
 }

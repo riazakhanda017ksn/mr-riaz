@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import About from './components/About/About';
+import Navbar from './components/Navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Myself from './components/Me/Me';
+import About from './components/About/About';
 
 const App = () => {
   useEffect(() => {
@@ -22,7 +23,8 @@ const App = () => {
     <>
   
       <div >
-      
+
+      <Navbar/>
       <Myself/>
       <About/>
      
