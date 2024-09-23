@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import logoimg from '../../assets/img/logo.png'
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
