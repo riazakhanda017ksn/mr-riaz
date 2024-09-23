@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import logo from "../../../src/assets/img/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -20,7 +19,7 @@ const Navbar = () => {
     <div className="container">
     <div className="main-header">
     <div className="names">
-      <img src={logo} alt="" />
+      <img src='https://i.imgur.com/vBQcL7c.png' alt="" />
     </div>
     <div>
       <div >
